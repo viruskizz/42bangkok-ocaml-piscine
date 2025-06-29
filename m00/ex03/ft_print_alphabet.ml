@@ -7,5 +7,3 @@ let ft_print_alphabet () =
   in
   print_c 'a';
   print_char '\n'
-
-(* Main function to call ft_print_alphabet *)
