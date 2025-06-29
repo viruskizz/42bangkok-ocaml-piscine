@@ -1,0 +1,18 @@
+services:
+  ocaml:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    user: "1000:1000"
+    volumes:
+      - .:/app
+    working_dir: /app
+    command: ["tail", "-f", "/dev/null"]
+  portainer:
+    image: portainer/portainer-ce:latest
+    ports:
+      - "9000:9000"
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+      # - portainer_data:/data
+    command: ["--admin-password", "424242424242"]
