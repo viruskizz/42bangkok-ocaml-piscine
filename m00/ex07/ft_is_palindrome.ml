@@ -7,7 +7,7 @@ let ft_is_palindrome (s: string) : bool =
         check_char (i + 1)
       else
         false
-      else
-        true
+    else
+      true
   in
   check_char 0;;

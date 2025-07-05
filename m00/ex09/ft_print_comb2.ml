@@ -13,10 +13,10 @@ let ft_print_comb2 () : unit =
         print_digit j;
         if i < 99 || j < 99 then
           print_string ", ";
-        print_cmb i (j + 1)
+        print_cmb i (j + 1);
       )
       else
-        print_cmb (i + 1) (i + 2)
+        print_cmb (i + 1) (i + 2);
   in
   print_cmb 0 0;
   print_char '\n';

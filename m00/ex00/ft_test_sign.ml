@@ -1,9 +1,10 @@
-let ft_test_sign x =
+let ft_test_sign (x: int) =
   if x >= 0 then
-    "positive"
+    print_endline "positive"
   else
-    "negative"
-
+    (* print_endline "negative" *)
+    print_endline "negative"
+  ;;
 (* Main function to read input and call ft_test_sign *)
 (* let () = 
   if Array.length Sys.argv <> 2 then
