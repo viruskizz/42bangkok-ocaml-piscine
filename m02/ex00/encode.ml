@@ -1,7 +1,14 @@
-let encode ('a list) : (int * 'a) list =
-  let codes = [] in
-  let len = List.length list in
-  match list with
+let encode (lst: 'a list) : (int * 'a) list =
+  match lst with
   | [] -> []
-  | _ ->
-    let rec aux cur count acc = 
+  | h :: t ->
+    let rec aux count curr acc = function
+      | [] -> (count, curr) :: acc
+      | x :: xs ->
+          if x = curr then
+            aux (count + 1) curr acc xs
+          else
+            aux 1 x ((count, curr) :: acc) xs
+    in
+    aux 1 h [] t
+;;

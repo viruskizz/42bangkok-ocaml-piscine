@@ -1,9 +1,12 @@
 NAME=piscine-ocaml
 
-all: up
+all: dev
 
 up:
 	docker compose up --build --detach
+
+dev:
+	docker compose up --detach
 
 exec:
 	docker compose exec -u root ocaml bash
