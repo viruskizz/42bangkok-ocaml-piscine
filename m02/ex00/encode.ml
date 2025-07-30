@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 let encode (lst: 'a list) : (int * 'a) list =
   match lst with
   | [] -> []
@@ -12,3 +13,12 @@ let encode (lst: 'a list) : (int * 'a) list =
     in
     aux 1 h [] t
 ;;
+=======
+let encode ('a list) : (int * 'a) list =
+  let codes = [] in
+  let len = List.length list in
+  match list with
+  | [] -> []
+  | _ ->
+    let rec aux cur count acc = 
+>>>>>>> ffe343c9bf9ac1e27d25a8b54c3b92f6881ff161
