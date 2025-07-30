@@ -2,7 +2,7 @@ let encode (lst: 'a list) : (int * 'a) list =
   match lst with
   | [] -> []
   | h :: t ->
-    let rec aux count curr acc = function
+    let rec aux (count: int) (curr: 'a) (acc: (int * 'a) list) = function
       | [] -> (count, curr) :: acc
       | x :: xs ->
           if x = curr then

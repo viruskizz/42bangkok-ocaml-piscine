@@ -11,6 +11,10 @@ To validate this piscine, you must complete the following projects:
 - [OCAML- Object oriented programming- 2]
 - [OCAML- Monoids and Monads- 3]
 
+## Resource Materials
+- [Book]
+- [Course]
+
 <!-- Links -->
 [OCAML- Basic syntax and semantics- 0]: https://projects.intra.42.fr/projects/ocaml-basic-syntax-and-semantics-0
 [OCAML- Recursion and higher-order functions- 0]: https://projects.intra.42.fr/projects/ocaml-recursion-and-higher-order-functions-0
@@ -21,3 +25,6 @@ To validate this piscine, you must complete the following projects:
 [OCAML- Object oriented programming- 1]: https://projects.intra.42.fr/projects/ocaml-object-oriented-programming-1
 [OCAML- Object oriented programming- 2]: https://projects.intra.42.fr/projects/ocaml-object-oriented-programming-2
 [OCAML- Monoids and Monads- 3]: https://projects.intra.42.fr/projects/ocaml-monoids-and-monads-3
+
+[Book]: https://cs3110.github.io/textbook/cover.html
+[Course]: https://www.youtube.com/watch?v=UWmxYBEKzN8&list=PLre5AT9JnKShBOPeuiD9b-I4XROIJhkIU&index=20&ab_channel=MichaelRyanClarkson
